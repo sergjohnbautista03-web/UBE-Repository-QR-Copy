@@ -1,24 +1,117 @@
-*.log
-.DS_Store
+
+# ==========================================
+# LARAVEL / PHP DEPENDENCIES
+# ==========================================
+/vendor
+/node_modules
+/auth.json
+
+# ==========================================
+# ENVIRONMENT VARIABLES / SECRETS
+# ==========================================
 .env
-.env.backup
-.env.production
-.phpactor.json
-.phpunit.result.cache
+.env.*
+!.env.example
+!.env.testing.example
+.npmrc
+
+# ==========================================
+# DATABASES / DATABASE BACKUPS
+# ==========================================
+*.sql
+*.sqlite
+*.sqlite3
+*.dump
+*.bak
+*.backup
+/database/backups/
+/database/dumps/
+
+# ==========================================
+# PRIVATE USER UPLOADS / RESEARCH DOCUMENTS
+# ==========================================
+/storage/app/private/**
+/storage/app/public/**
+/storage/app/temp/**
+/storage/app/backups/
+/storage/app/uploads/
+/storage/app/public.zip
+/public/storage
+/public/uploads/
+/public/research/
+/public/documents/
+
+# ==========================================
+# LARAVEL LOGS / CACHE / TEMPORARY FILES
+# ==========================================
+*.log
+/storage/logs/*
+/storage/framework/cache/*
+/storage/framework/sessions/*
+/storage/framework/views/*
+/bootstrap/cache/*.php
+
+# ==========================================
+# LARAVEL GENERATED FILES
+# ==========================================
+/storage/*.key
+/storage/pail
+/public/hot
+
+# ==========================================
+# PRODUCTION BUILD
+# Keep public/build tracked for Hostinger
+# ==========================================
+/public/mix-manifest.json
+
+# ==========================================
+# IDE / EDITOR SETTINGS
+# ==========================================
 /.fleet
 /.idea
 /.nova
 /.phpunit.cache
 /.vscode
 /.zed
-/auth.json
-/node_modules
-/public/build
-/public/hot
-/public/storage
-/storage/*.key
-/storage/pail
-/vendor
+.phpactor.json
+
+# ==========================================
+# TESTING
+# ==========================================
+.phpunit.result.cache
+.phpunit.cache
+
+# ==========================================
+# OPERATING SYSTEM FILES
+# ==========================================
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# ==========================================
+# HOMESTEAD
+# ==========================================
 Homestead.json
 Homestead.yaml
-Thumbs.db
+
+# ==========================================
+# BACKUP / ARCHIVE FILES
+# ==========================================
+*.zip
+*.rar
+*.7z
+*.tar
+*.gz
+
+# ==========================================
+# PRIVATE KEYS / CERTIFICATES
+# ==========================================
+*.pem
+*.key
+*.p12
+*.pfx
+
+# ==========================================
+# LOCAL SECURITY BACKUP
+# ==========================================
+.gitignore.security-backup
